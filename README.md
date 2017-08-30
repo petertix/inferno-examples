@@ -1,6 +1,8 @@
 # inferno-examples
 Create react and inferno example.
 
-### **yarn**##
-### **yarn build**##
+## Install yarn and http-server
+
+### **yarn**
+### **yarn build**
 ### **http-server**
