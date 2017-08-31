@@ -15,9 +15,7 @@ class Countdown extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.countdownStatus !== prevState.countdownStatus) {
-      this.tick();
-    }
+    if (this.state.countdownStatus !== prevState.countdownStatus) this.tick();
   }
 
   componentWillUnmount() {
@@ -26,7 +24,7 @@ class Countdown extends React.Component {
 
   tick() {
     this.timer = setInterval(() => {
-      var newCount = this.state.count - 1;
+      const newCount = this.state.count - 1;
       if (newCount === 0) Beep();
       this.setState({
         count: newCount >= 0 ? newCount : 0
@@ -42,7 +40,7 @@ class Countdown extends React.Component {
   }
 
   render() {
-    var { count } = this.state;
+    const { count } = this.state;
 
     return (
       <div>

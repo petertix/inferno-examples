@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import Countdown from './Countdown.jsx';
 
 class ClockApp extends React.Component {

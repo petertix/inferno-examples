@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 
 class ListItems extends React.Component {
   constructor() {

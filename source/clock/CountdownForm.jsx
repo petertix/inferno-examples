@@ -3,7 +3,7 @@ import React from 'react';
 class CountdownForm extends React.Component {
   onSubmit(e) {
     e.preventDefault();
-    var secondsStr = this.refs.seconds.value;
+    const secondsStr = this.refs.seconds.value;
 
     if (secondsStr.length > 0 && secondsStr.match(/^[0-9]*$/)) {
       this.refs.seconds.value = '';
